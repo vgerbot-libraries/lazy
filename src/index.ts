@@ -1,7 +1,4 @@
-export function hello() {
-    return 'world';
-}
-interface A {}
-
-class B implements A {}
-new B();
+export { lazyMember } from './lazyMember';
+export { lazyMemberOfClass } from './lazyMemberOfClass';
+export { lazyProp } from './lazyProp';
+export { lazyVal } from './lazyVal';

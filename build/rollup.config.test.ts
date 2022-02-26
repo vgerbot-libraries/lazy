@@ -1,8 +1,8 @@
-import rollupConfig from '../rollup.config';
+import rollupConfig from './rollup.config';
 
 delete rollupConfig.input;
 rollupConfig.output = {
-    sourcemap: true
+    sourcemap: false
 };
 
 export default rollupConfig;

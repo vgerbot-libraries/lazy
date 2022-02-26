@@ -1,12 +1,14 @@
 import { OutputOptions, RollupOptions } from 'rollup';
 import path from 'path';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
+import pkg from '../package.json';
+
 // const { nodeResolve } = require('@rollup/plugin-node-resolve');
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 
-const pkg = require(path.resolve(process.cwd(), 'package.json'));
+// const pkg = require(path.resolve(process.cwd(), 'package.json'));
 
 const outputConfig = [
     [pkg.browser, 'umd'],

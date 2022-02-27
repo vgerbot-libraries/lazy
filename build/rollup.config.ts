@@ -28,7 +28,12 @@ const rollupConfig: RollupOptions = {
             ignore: [],
             sourceMap: false
         }),
-        typescript(),
+        typescript({
+            tsconfigOverride: {
+                include: ['src'],
+                exclude: ['build']
+            }
+        }),
         terser()
     ]
 };

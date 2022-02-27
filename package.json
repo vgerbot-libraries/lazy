@@ -58,6 +58,7 @@
         "rollup-plugin-terser": "^7.0.2",
         "rollup-plugin-typescript2": "^0.30.0",
         "sucrase": "^3.20.3",
+        "typedoc": "^0.22.12",
         "zx": "^4.2.0"
     },
     "bugs": {

@@ -3,7 +3,8 @@
     "compilerOptions": {
         "paths": {
             "@src": ["/src"]
-        }
+        },
+        "experimentalDecorators": true
     },
     "include": ["src"]
 }

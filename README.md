@@ -5,11 +5,11 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-round)](https://github.com/prettier/prettier)
 
 A library for defining lazily evaluated properties.
-Some property values that are expensive to generate can delay initialization until the property is needed.
 
+Some property values that are expensive to generate can delay initialization until the property is needed.
 In some scenarios, some attribute values do not need to be initialized immediately at the beginning,
 and initializing these attributes immediately has a great impact on performance.
-You can use a lazy evaluation strategy to delay initialization until the property values are required to improve performance.
+You can improve performance by deferring property initialization until it is needed through lazy evaluation.
 
 ## Install
 

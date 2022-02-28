@@ -1,4 +1,8 @@
-# @vgerbot/lazy
+# @vgerbot/lazy  ![NPM](https://img.shields.io/npm/l/@vgerbot/lazy?style=social)
+
+[![Test](https://github.com/y1j2x34/lazy/actions/workflows/runtest.yml/badge.svg)](https://github.com/y1j2x34/lazy/actions/workflows/runtest.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c829a1a9caa9451abe0a1c1dc71a87da)](https://www.codacy.com/gh/y1j2x34/lazy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=y1j2x34/lazy&amp;utm_campaign=Badge_Grade)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-round)](https://github.com/prettier/prettier)
 
 A library for defining lazily evaluated properties.
 Some property values that are expensive to generate can delay initialization until the property is needed.
@@ -15,12 +19,9 @@ npm i @vgerbot/lazy
 
 ## Usage
 
-
 ### `@lazyMember` decorator
 
->
 > `@lazyMember` requires the `"experimentalDecorators": true` in your `tsconfig.json` file
->
 
 ```ts
 import { lazyMember } from '@vgerbot/lazy';
@@ -70,7 +71,7 @@ user.age = 19;
 // The `age` property has changed, so the `littleBrothers` property will also be reset.
 
 user.littleBrothers.then(() => {})
-// console output: "fetch:  http://api.domain.com/friends?userId=a5cba8f&maxAge=19"
+// console output: "fetch:  http://api.domain.com/friends?userId=a5cba8f&maxAge=<b>19</b>"
 
 ```
 

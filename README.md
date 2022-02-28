@@ -1,5 +1,7 @@
 # @vgerbot/lazy
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a18d69efa9594d969fb51fad51557729)](https://app.codacy.com/gh/y1j2x34/lazy?utm_source=github.com&utm_medium=referral&utm_content=y1j2x34/lazy&utm_campaign=Badge_Grade_Settings)
+
 A library for defining lazily evaluated properties.
 Some property values that are expensive to generate can delay initialization until the property is needed.
 

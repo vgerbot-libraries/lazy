@@ -1,6 +1,7 @@
 # @vgerbot/lazy  ![NPM](https://img.shields.io/npm/l/@vgerbot/lazy?style=social)
 
 [![Test](https://github.com/y1j2x34/lazy/actions/workflows/runtest.yml/badge.svg)](https://github.com/y1j2x34/lazy/actions/workflows/runtest.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/c829a1a9caa9451abe0a1c1dc71a87da)](https://www.codacy.com/gh/y1j2x34/lazy/dashboard?utm_source=github.com&utm_medium=referral&utm_content=y1j2x34/lazy&utm_campaign=Badge_Coverage)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c829a1a9caa9451abe0a1c1dc71a87da)](https://www.codacy.com/gh/y1j2x34/lazy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=y1j2x34/lazy&amp;utm_campaign=Badge_Grade)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-round)](https://github.com/prettier/prettier)
 

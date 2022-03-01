@@ -9,7 +9,7 @@ export function lazyVal<R>(opts: LazyValOption<R> | (() => R)) {
     return lazyProp(
         {
             __val__: null
-        },
+        } as {},
         '__val__',
         opts
     );

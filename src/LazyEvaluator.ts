@@ -1,6 +1,6 @@
 import { LazyEvaluateCallback } from './LazyEvaluateCallback';
 
-interface LazyEvalutatorOptions<T, R> {
+interface LazyEvaluatorOptions<T, R> {
     target: T;
     evaluate: LazyEvaluateCallback<T, R>;
     resetTesters: Array<(instance: T) => boolean>;
@@ -16,7 +16,7 @@ export class LazyEvaluator<T, R> {
     private computeFn: (instance: T) => R;
     private evaluateResult: R = NOT_INITIALIZED_OBJECT as R;
     private resetTester: Array<(context: T) => boolean>;
-    constructor(options: LazyEvalutatorOptions<T, R>) {
+    constructor(options: LazyEvaluatorOptions<T, R>) {
         this.context = options.target;
         this.computeFn = options.evaluate;
         this.resetTester = options.resetTesters;

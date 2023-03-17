@@ -8,6 +8,7 @@
     "distDir": "dist/",
     "library": "boilerplate",
     "typing": "dist/index.d.ts",
+    "types": "dist/index.d.ts",
     "publishConfig": {
         "access": "public"
     },

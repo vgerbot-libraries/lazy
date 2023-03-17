@@ -1,6 +1,6 @@
 {
     "name": "@vgerbot/lazy",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "A library for defining lazily evaluated properties and variables powered by TypeScript.",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
@@ -26,7 +26,8 @@
         "lint": " eslint {src,__test__}/**/*.{js,ts,tsx}",
         "format": "eslint --fix {src,__test__}/**/*.{js,ts,tsx}",
         "build": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
-        "gendoc": "typedoc ./src  --out dist/docs --name @vgerbot/lazy --hideGenerator"
+        "gendoc": "typedoc ./src  --out dist/docs --name @vgerbot/lazy --hideGenerator",
+        "prepublish": "npx rimraf ./dist && npm run build && npm run gendoc"
     },
     "lint-staged": {
         "{src,test}/**/*.{js,ts,tsx}": [

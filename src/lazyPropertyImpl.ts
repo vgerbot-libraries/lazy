@@ -26,7 +26,7 @@ export function lazyPropertyImpl<T, K extends keyof T = keyof T, R = T[K]>(
     }
     const desc = Object.getOwnPropertyDescriptor(object, propertyKey);
     if (desc && !desc.configurable) {
-        throw new Error('Cannot override override property: ' + propertyKey);
+        throw new Error(`Cannot override override property: ${String(propertyKey)}`);
     }
     const enumerable = typeof options.enumerable === 'boolean' ? options.enumerable : desc?.enumerable || true;
     const resetBy = options.resetBy || [];

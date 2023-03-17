@@ -1,4 +1,4 @@
-import { lazyProp } from './index';
+import { lazyProp } from "./lazyProp";
 
 export interface LazyValOption<R> {
     evaluate: () => R;
